@@ -1,12 +1,5 @@
 # Doctor On Call
 
-## Technologies Used
-
-- **HTML5** for structuring the content.
-- **CSS3** for styling, with custom responsive design.
-- **JavaScript** for dynamic functionalities.
-- **Bootstrap 5** for responsive grid system and UI components.
-
 ## How to Run
 
 ### Option 1: Using Go Live Extension
@@ -16,6 +9,14 @@
 
 ### Option 2: Direct HTML Preview
 - Open `index.html` directly in your browser by double-clicking or using the "Open File" feature in your browser.
+
+
+## Technologies Used
+
+- **HTML5** for structuring the content.
+- **CSS3** for styling, with custom responsive design.
+- **JavaScript** for dynamic functionalities.
+- **Bootstrap 5** for responsive grid system and UI components.
 
 ## Project Structure
 
