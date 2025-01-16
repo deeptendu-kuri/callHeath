@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Doctor On Call</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <section class="hero-section">
+      <div class="hero-bg"></div>
+      <div class="container hero-content">
+        <div class="search-container">
+          <h1 class="text-primary mb-2" style="margin-top: 80px">
+            Avoid travel to Clinics
+          </h1>
+          <h2 class="text-success">DOCTOR ON CALL.</h2>
+          <p class="text-muted">Expert consultation: Just a ring away</p>
+          <input
+            type="text"
+            class="search-bar"
+            placeholder="Search for Doctors"
+          />
+        </div>
+      </div>
+    </section>
+
+    <div class="container my-5">
+      <div class="row">
+        <div class="col-md-3">
+          <label for="filterDropdown" class="mobile-filter-label"
+            >Filter by categories:</label
+          >
+          <select id="filterDropdown" class="form-select mb-3 filter-toggle">
+            <option value="timeSlot">Time Slot</option>
+            <option value="specialty">Speciality</option>
+            <option value="gender">Gender</option>
+            <option value="experience">Experience</option>
+          </select>
+          <div class="filter-card time-slot-filter" data-filter="timeSlot">
+            <h6 class="mb-3">Time Slot</h6>
+            <div class="form-check mb-2">
+              <input class="form-check-input" type="checkbox" id="next30" />
+              <label class="form-check-label" for="next30"
+                >In next 30 min</label
+              >
+            </div>
+            <div class="form-check mb-2">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="today"
+                checked
+              />
+              <label class="form-check-label" for="today">Today</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="thisWeek" />
+              <label class="form-check-label" for="thisWeek">This Week</label>
+            </div>
+          </div>
+
+          <div class="filter-card specialty-filter" data-filter="specialty">
+            <h6 class="mb-3">Speciality</h6>
+            <div class="form-check mb-2">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="dermatology"
+                checked
+              />
+              <label class="form-check-label d-flex align-items-center">
+                <img src="assets/s1.png" alt="" class="specialty-icon" />
+                Dermatology
+              </label>
+            </div>
+            <div class="form-check mb-2">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="generalPhysician"
+              />
+              <label class="form-check-label d-flex align-items-center">
+                <img src="assets/s3.png" alt="" class="specialty-icon" />
+                General Physician
+              </label>
+            </div>
+            <div class="form-check mb-2">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="gynaecology"
+              />
+              <label class="form-check-label d-flex align-items-center">
+                <img src="assets/obesity.svg" alt="" class="specialty-icon" />
+                Gynaecology
+              </label>
+            </div>
+            <div class="form-check mb-2">
+              <input class="form-check-input" type="checkbox" id="neurology" />
+              <label class="form-check-label d-flex align-items-center">
+                <img src="assets/brain.svg" alt="" class="specialty-icon" />
+                Neurology
+              </label>
+            </div>
+            <div class="form-check mb-2">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="orthopaedics"
+              />
+              <label class="form-check-label d-flex align-items-center">
+                <img src="assets/arth.svg" alt="" class="specialty-icon" />
+                Orthopaedics
+              </label>
+            </div>
+            <a href="#" class="text-primary text-decoration-none">View all</a>
+          </div>
+
+          <div class="filter-card gender-filter" data-filter="gender">
+            <h6 class="mb-3">Gender</h6>
+            <div class="d-flex justify-content-around">
+              <img src="assets/male.png" alt="Male Doctor" width="50" />
+              <img src="assets/female.png" alt="Female Doctor" width="50" />
+            </div>
+          </div>
+
+          <div class="filter-card experience-filter" data-filter="experience">
+            <h6 class="mb-3">Experience</h6>
+            <div class="form-check mb-2">
+              <input class="form-check-input" type="checkbox" id="lessThan5" />
+              <label class="form-check-label" for="lessThan5"
+                >Common issues (<5 years)</label
+              >
+            </div>
+            <div class="form-check mb-2">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="between5and10"
+              />
+              <label class="form-check-label" for="between5and10"
+                >Advanced (5 - 10 years)</label
+              >
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="moreThan10" />
+              <label class="form-check-label" for="moreThan10"
+                >Specialised (>10 years)</label
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-9">
+          <div class="doctors-grid">
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="container my-5">
+      <h2 class="mb-0">Health Talks with E</h2>
+      <p class="mb-5" style="font-size: 24px">Awareness, Care, and</p>
+      <div class="row health-class-container">
+        
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="main.jsx"></script>
+  </body>
+</html>
